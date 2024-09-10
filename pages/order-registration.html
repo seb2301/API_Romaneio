@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pedido</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="client-registration.html">Cadastro de Cliente</a></li>
+                <li><a href="order-registration.html">Cadastro de Pedido</a></li>
+                <li><a href="romaneio-registration.html">Cadastro de Romaneio</a></li>
+                <li><a href="stock-maintenance.html">Cadastro e Manutenção de Estoque</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Cadastro de Pedido</h2>
+        <form id="orderForm">
+            <label for="clientName">Nome do Cliente:</label>
+            <input type="text" id="clientName" name="clientName" required>
+            
+            <label for="productDetails">Detalhes do Produto:</label>
+            <textarea id="productDetails" name="productDetails" rows="4" required></textarea>
+            
+            <label for="orderDate">Data do Pedido:</label>
+            <input type="date" id="orderDate" name="orderDate" required>
+            
+            <label for="orderQuantity">Quantidade:</label>
+            <input type="number" id="orderQuantity" name="orderQuantity" required>
+            
+            <button type="submit">Cadastrar Pedido</button>
+        </form>
+    </div>
+    <footer>
+        <p>Powered by Tech Titans</p>
+    </footer>
+</body>
+</html>

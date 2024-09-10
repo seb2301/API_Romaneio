@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Funcionário Terceirizado</title>
+    <style>
+        /* Estilos específicos para a página de login de funcionário terceirizado */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #46637f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-section img {
+            width: 150px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #46637f;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #46637f;
+        }
+
+        input {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #46637f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3b5566;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="../assets/images/logo.png" alt="Logo Kalter">
+        </div>
+        <h2>Olá Colaborador(a) Terceirizado(a)</h2>
+        <p>Entre com seu login e senha para acessar a sua conta</p>
+        <form action="terceirizado-dashboard.html" method="post">
+            <label for="matricula">Número Matrícula (Empregado):</label>
+            <input type="text" id="matricula" name="matricula" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar" style="margin-left: 5px;">Manter-me logado</label>
+            </div>
+            
+            <button type="submit">Login</button>
+        </form>
+        <footer>
+            <p>Powered by TECH TITANS</p>
+        </footer>
+    </div>
+</body>
+</html>

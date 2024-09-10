@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Funcionário</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        body {
+            background-color: #46637f; /* Cor de fundo azulada */
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #46637f; /* Cor de fundo azulada */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 80%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-section {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        .form-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-section p {
+            color: #fff
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-section label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #fff
+        }
+
+        .form-section input[type="text"],
+        .form-section input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form-section input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+
+        .form-section button {
+            padding: 10px;
+            background-color: white;
+            color: #46637f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-section img {
+            width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+            margin-bottom: 10px;
+        }
+
+        .logo-section p {
+            font-size: 10px;
+            margin-top: 20px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Olá Colaborador(a)</h2>
+            <p>Entre com seu login e senha para acessar a sua conta</p>
+            <form action="employee-dashboard.html" method="post">
+                <label for="matricula">Número Matrícula (Empregado(a)):</label>
+                <input type="text" id="matricula" name="matricula" required>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label>
+                    <input type="checkbox" name="remember"> Manter-me logado
+                </label>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="logo-section">
+            <img src="../assets/images/logo.png" alt="Logo Kalter">
+            <p>Powered by TECH TITANS</p>
+        </div>
+    </div>
+</body>
+</html>
