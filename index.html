@@ -52,17 +52,16 @@
 
         .login-buttons {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            flex-direction: column; /* Mantém os botões em coluna */
             align-items: center;
-            margin-top: 20px;
             width: 100%;
         }
 
         .login-button {
+            display: block; /* Botão em bloco para ocupar toda a largura disponível */
             width: 100%;
-            max-width: 300px;
-            padding: 10px 20px;
+            max-width: 300px; /* Largura máxima do botão */
+            padding: 15px;
             font-size: 1rem;
             color: #fff;
             background-color: #46637f;
@@ -72,6 +71,7 @@
             transition: background-color 0.3s ease;
             text-decoration: none;
             text-align: center;
+            margin-bottom: 15px; /* Espaçamento inferior entre os botões */
         }
 
         .login-button:hover {
@@ -105,10 +105,8 @@
         </div>
         <h1>Bem-vindo ao Sistema de Login</h1>
         <div class="login-buttons">
-            <nav>
-                <a href="login-funcionario.html" class="login-button">Login Funcionário Interno</a>
-                <a href="login-terceirizado.html" class="login-button">Login Funcionário Terceirizado</a>
-            </nav>
+            <a href="login-funcionario.html" class="login-button">Login Funcionário Interno</a>
+            <a href="login-terceirizado.html" class="login-button">Login Funcionário Terceirizado</a>
         </div>
     </div>
     
