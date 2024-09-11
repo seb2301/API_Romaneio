@@ -16,6 +16,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center; /* Centralizar itens no celular */
 }
 
 nav ul li {
@@ -84,4 +85,34 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Regras de mídia para responsividade em telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+        max-width: 100%;
+        box-shadow: none; /* Remover sombra para simplificação em dispositivos menores */
+    }
+
+    nav ul li {
+        display: block; /* Alinhar verticalmente os itens de menu */
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura do container em telas pequenas */
+        margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%; /* Inputs ocupam toda a largura disponível */
+    }
+
+    footer {
+        position: relative; /* Para que o rodapé não sobreponha o conteúdo em telas pequenas */
+    }
 }
