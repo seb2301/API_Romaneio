@@ -30,6 +30,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             color: #333;
+            max-width: 90%;
+            width: 100%;
         }
 
         .logo-section {
@@ -37,26 +39,31 @@
         }
 
         .logo-section img {
-            width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+            width: 150px; /* Ajuste do tamanho da logo para telas menores */
+            max-width: 100%;
+            height: auto;
         }
 
         h1 {
             margin-bottom: 20px;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #46637f;
         }
 
         .login-buttons {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
             margin-top: 20px;
+            width: 100%;
         }
 
         .login-button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px 20px;
+            font-size: 1rem;
             color: #fff;
             background-color: #46637f;
             border: none;
@@ -64,6 +71,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             text-decoration: none;
+            text-align: center;
         }
 
         .login-button:hover {
@@ -72,9 +80,21 @@
 
         footer {
             margin-top: 30px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #666;
             text-align: center;
+        }
+
+        /* Regras de mídia para responsividade em telas menores */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .login-button {
+                font-size: 1rem;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -86,9 +106,9 @@
         <h1>Bem-vindo ao Sistema de Login</h1>
         <div class="login-buttons">
             <nav>
-            <a href="login-funcionario.html" class="login-button">Login Funcionário Interno</a>
-            <a href="login-terceirizado.html" class="login-button">Login Funcionário Terceirizado</a>
-        </nav>
+                <a href="login-funcionario.html" class="login-button">Login Funcionário Interno</a>
+                <a href="login-terceirizado.html" class="login-button">Login Funcionário Terceirizado</a>
+            </nav>
         </div>
     </div>
     
